@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+
+    overflow-y: hidden;
+    background-image: url(./photos/grass.jpg);
+    overflow: hidden;
+}
+
+@keyframes animate{
+0%{
+    background-position-y: 0%;
+}
+10%{
+    background-position-y: 10%;
+}
+30%{
+    background-position-y: 30%;
+}
+50%{
+    background-position-y:50%;
+}
+70%{
+    background-position-y: 70%;
+}
+90%{
+    background-position-y: 90%;
+}
+100%{
+    background-position-y: 100%;
+}
+   
+}
+.hide{
+    display: none;
+}
+
+
+
+.start{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 300px;
+    text-align: center;
+    font-family: cursive;
+    background-color: aqua;
+    font-size: 50px;
+    margin: auto;
+  
+
+}
+.myCar{
+    position: absolute;
+    top: 70%;
+    width: 4rem;
+    height: 8rem;
+    background-image: url(./photos/—Pngtree—cartoon\ overhead\ blue\ car_4170273.png);
+    background-size: cover;
+    border-radius: 20px;
+    
+}
+
+.score{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    background-color: black;
+    width: 12rem;
+    line-height: 28px;
+    text-align: center;
+    color: chartreuse;
+    z-index: 1;
+    height: 56px;
+    border-radius: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.road{
+    position: relative;
+    width: 29rem;
+    height: 100vh;
+    background-color: rgb(68, 67, 67);
+    border-left: 7px dashed black;
+    border-right: 7px dashed black;
+    background-size: contain;
+    animation: final;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.enemyCar{
+    position: absolute;
+    background-image: url(./photos/—Pngtree—ford\ car\ overlooking\ view_2960075.png);
+    background-size: cover;
+    width: 4.5rem;
+    height: 8.1rem;  
+}
+.roadLines{
+    position: absolute;
+    background-color: white;
+    width: 4%;
+    height: 15%;
+    left: 50%  ;
+    transform: translateX(-50%);
+}
+
+
+
+@media only screen and (max-width:500px){
+    
+
+    .road{
+        width: 96vw;
+        height: 100vh;
+    }
+
+    .enemyCar{
+        width: 3.94rem;
+        height: 7.1rem;
+    }
+    .myCar{
+        width: 3.5rem;
+        height: 7rem;
+    }
+}
