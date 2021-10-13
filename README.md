@@ -1,2 +1,2 @@
 # car_game
-a fun car game
+Car game using JS
